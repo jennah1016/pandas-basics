@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv('electric billing data.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/jennah1016/pandas-basics/refs/heads/main/electric%20billing%20data.csv')
 
 #average spending for each year
 avg2022 = df["2022"].mean()
@@ -14,3 +14,8 @@ print (df.to_string())
 print(f'\n2022 average : ${avg2022:.2f}')
 print(f'2023 average: ${avg2023:.2f}')
 print(f'2024 YTD average: ${avg2024YTD:.2f}')
+
+#to-do: learn how to find projected spending
+'''octavg
+novavg
+decavg'''

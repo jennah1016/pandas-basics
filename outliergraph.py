@@ -2,15 +2,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+#load dataset
 df = pd.read_csv('https://raw.githubusercontent.com/jennah1016/pandas-basics/refs/heads/main/electric%20billing%20data.csv')
+df.plot(kind='box')
 
-df.plot()
+plt.title("Electric Billing Data Outliers")
+plt.xlabel("Year")
+plt.ylabel("Amount Spent (millions of dollars)")
 
-#add labels to the graph
-plt.title("CTA Electric Billing Data: January 2022 - September 2024")
-plt.xlabel("month")
-plt.ylabel("amount spent (millions)")
-
-#display graph
 plt.show()
-
